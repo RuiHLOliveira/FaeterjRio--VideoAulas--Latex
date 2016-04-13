@@ -1,0 +1,111 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%    Preâmbulo do Documento    %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc} %Acentuação das palavras
+\usepackage{helvet} %importando fonte helvet/arial equivalente
+\renewcommand{\familydefault}{\sfdefault} %aplicando fonte helvet
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	left=3cm,
+	top=3cm,
+	right=2cm,
+	bottom=2cm
+}
+\usepackage{graphicx}
+\renewcommand{\figurename}{Figura}
+\renewcommand{\listfigurename}{Lista de Figuras}
+\renewcommand{\contentsname}{Sumário}
+\usepackage{enumerate}
+\usepackage{tabularx}
+\renewcommand\tablename{Tabela}
+
+%   ***3
+
+
+\title{Modelo\\Especificação dos Requisitos do Software\\ Sistema de Teste LaTeX}
+\author{\\ \\ \\Rui Henrique Leite de Oliveira \\ FAETERJ\\ \\ \\ \\}
+\date{Rio de Janeiro - RJ \\ 3 de Março de 2016}
+
+\begin{document}
+\pagenumbering{gobble}
+\maketitle
+\newpage
+
+\pagenumbering{arabic}
+\thispagestyle{empty}
+\listoffigures
+\newpage
+
+%   ***4
+
+
+\thispagestyle{empty}
+\tableofcontents
+\newpage
+
+\section{Introdução}
+	\subsection{Objetivos deste documento}
+		\paragraph{}Descrever e especificar as necessidades levantadas pelo autor que devem ser atendidas pelo produto Sistema de Teste LaTeX, bem como definir para os desenvolvedores o produto a ser feito.
+		
+		\begin{figure}[!h]
+			\caption{UML Logo}
+			\centering
+			\includegraphics[width=5cm]{"uml".png}
+		\end{figure}
+		
+		\paragraph{}Público-alvo: cliente, usuários e desenvolvedores do projeto Taskando.
+	\subsection{Escopo do produto}
+		\subsubsection{Nome do produto e de seus componentes principais}
+			\paragraph{}Sistema de Teste LaTeX (Componente único).
+		\subsubsection{Missão do produto}
+			\paragraph{}Apoio informatizado na pesquisa à ser realizada, fornecendo relatórios dos resultados obtidos.
+			
+			\begin{figure}[!h]
+				\caption{HTML5 Logo}
+				\centering
+				\includegraphics[width=3cm]{"imagens/html5".png}
+			\end{figure}
+				
+		\subsubsection{Limites do produto}
+			\begin{enumerate}
+					\item O Sistema de Teste LaTeX terá interações somente via terminal ou interface gráfica desktop.
+					\item O Sistema de Teste LaTeX não terá suporte à funcionalidades online.
+					\item O Sistema de Teste LaTeX não persistirá informações utilizando SGBDs.
+					\item O Sistema de Teste LaTeX não terá ajuda on-line.
+			\end{enumerate}
+						
+		\subsubsection{Benefícios do produto}
+			\begin{enumerate}
+				\item Diminuição de erros na  venda de mercadorias.
+				\item Qualidade na emissão da nota fiscal e ticket de venda, em relação à emissão manual.
+				\item Identificação de distorções entre o vendido e o estoque.
+				\item Agilidade na compra de mercadorias.
+				\item Identificação de produtos mais e menos vendidos.
+				\item Diminuição do custo de estocagem.
+				\item Economia de mão-de-obra.
+				\item Conhecimento do mercado de fornecedores.
+				\item Indicação de promoções.
+			\end{enumerate}
+			
+			%   ***1
+			\begin{table}
+				\caption{Benefícios do produto}
+				%   ***2
+				\begin{tabularx}{\linewidth}{ | X | X | }
+					\hline
+					Número de ordem & Benefício\\
+					\hline
+					1 & Diminuição de erros na  venda de mercadorias.\\
+					\hline
+					2 & Qualidade na emissão da nota fiscal e ticket de venda, em relação à emissão manual.\\
+					\hline
+					3 & Identificação de distorções entre o vendido e o estoque.\\
+					\hline
+				\end{tabularx}
+			\end{table}
+
+			
+\end{document} 
